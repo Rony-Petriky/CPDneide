@@ -34,7 +34,7 @@ ${pedido.observação}`;
 function gerarLinkWhatsApp(pedido: ClientProdutsprops) {
   const mensagem = formatarMensagem(pedido);
   const mensagemCodificada = encodeURIComponent(mensagem);
-  const numeroWhatsApp = '5565996934486'; // Substitua pelo número da empresa
+  const numeroWhatsApp = process.env.NUMERO; // Substitua pelo número da empresa
   
   return `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
 }

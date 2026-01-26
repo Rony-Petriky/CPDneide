@@ -43,7 +43,7 @@ export default function BestSellersCarousel({ products }: Props) {
           {products.map((product) => (
             <div
               key={product.id}
-              className="min-w-full flex-shrink-0 px-2"
+              className="min-w-full flex-shrink-0 px-1"
             >
               <div className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
                 <div className="relative h-80 md:h-96">
@@ -63,7 +63,7 @@ export default function BestSellersCarousel({ products }: Props) {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{product.name}</h3>
-                  <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
+                  <p className="max-w-[88vw] sm:max-w-full text-gray-600 mb-4 line-clamp-2">{product.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-3xl font-bold text-green-600">R$ {product.price.toFixed(2)}</span>
                     <button onClick={() => goToProduct(product.id)}
@@ -103,7 +103,7 @@ export default function BestSellersCarousel({ products }: Props) {
       )}
 
       {/* Dots Indicator */}
-      {products.length > 1 && (
+      {products.length > 0 && (
         <div className="flex justify-center gap-2 mt-6">
           {products.map((_, index) => (
             <button

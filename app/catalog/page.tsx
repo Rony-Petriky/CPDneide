@@ -92,7 +92,7 @@ export default async function CatalogPage() {
           </div>
         </section>
 
-        <section className="py-12 px-6 bg-gray-50">
+        <section className="py-12 px-1 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Produtos em Destaque</h2>

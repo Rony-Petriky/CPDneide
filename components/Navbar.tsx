@@ -41,11 +41,11 @@ export default function Navbar({dadosNav}: navbarobj) {
         </Link>
 
         <div className="flex gap-6">
-          <Link href="/" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+          <Link href="/catalog" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
             Home
           </Link>
-          <Link href="/catalog" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
-            Catálogo
+          <Link href="/sobrenos" className="text-gray-700 hover:text-green-600 transition-colors font-medium">
+            Sobre Nós
           </Link>
         </div>
       </nav>
