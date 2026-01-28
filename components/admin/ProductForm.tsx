@@ -14,10 +14,12 @@ export default function ProductForm({ product, onSubmit, onCancel }: ProductForm
   const [formData, setFormData] = useState({
     name: product?.name || "",
     description: product?.description || "",
-    price: product?.price || "",
+    price: product?.price || 0,
     category: product?.category || "",
     tags: product?.tags?.join(", ") || "",
     image: product?.image || "",
+    destaque: product?.destaque || false,
+    maisVendidos: product?.maisVendidos || false,
   });
 
   const [imagePreview, setImagePreview] = useState<string | null>(
